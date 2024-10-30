@@ -15,3 +15,16 @@ t.left(180)
 t.forward(165)
 t.right(180)
 t.forward(375)
+
+#Maze Code is second one
+
+import turtle
+t = turtle.Turtle()
+t.speed(5) # 1:slowest, 3:slow, 5:normal, 10:fast, 0:fastest
+t.forward(10)
+t.shape(name='turtle')
+
+for i in range(100):
+  t.forward(i)
+  t.left(25)
+
