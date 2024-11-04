@@ -16,7 +16,6 @@ t.forward(165)
 t.right(180)
 t.forward(375)
 
-#Maze Code is second one
 
 import turtle
 t = turtle.Turtle()
@@ -27,4 +26,33 @@ t.shape(name='turtle')
 for i in range(100):
   t.forward(i)
   t.left(25)
+t.penup()
+t.home()
 
+#Maze
+def draw_wall(start_x, start_y, length, direction):
+  turtle.penup()
+  turtle.goto(start_x, start_y)
+  turtle.pendown
+  
+  if direction == 'horizontal':
+    turtle.setheading(0)
+    turtle.forward(length)
+	elif direction == 'vertical':
+    turtle.setheading(90)
+    turtle.forward(length)
+
+draw_wall(-100, 100, 200, 'horizontal')
+draw_wall(-100, 0, 100, 'vertical')
+draw_wall(100, 0, 100 'vertical')
+draw_wall(-100, -100, 200, 'horizontal)
+draw_wall(-50, 50, 100, 'horizontal')
+draw_wall(0, 0, 100, 'horizontal')
+draw_wall(-50, -50, 100, 'vertical')
+
+turtle.hideturtle()
+turtle.done()
+
+
+turtle.setup(width=600, height=600)
+draw_maze()
